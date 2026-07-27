@@ -1,0 +1,138 @@
+# ============================================
+# 1С-Битрикс: стандартный .gitignore
+# ============================================
+
+# ----- Ядро Битрикс (обновляется отдельно) -----
+/bitrix/
+/bitrixsetup.update
+/bitrix24_source.tar.gz
+
+# ----- Загрузки пользователей -----
+/upload/
+
+# ----- Кэш и временные файлы -----
+/.cache/
+/managed_cache/
+*.log
+*.tmp
+*.bak
+*~
+.#*
+\#*#
+
+# ----- Конфигурационные файлы с секретами -----
+/license_key.php
+/.settings.php
+/.settings.php.bak
+/restore.php
+/restore.bak
+
+# ----- Системные файлы ОС -----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----- IDE и редакторы -----
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.buildpath
+.settings/
+
+# ----- Статические файлы (по желанию) -----
+# favicon.ico
+# robots.txt
+# sitemap.xml
+
+# ----- Файлы обновлений и установщики -----
+*.tar.gz
+*.zip
+update.php
+install.php
+/vendor/
+/agent_contract/
+/ai/
+/apconnect/
+/app/
+/attached_vote/
+/auth/
+/automation/
+/biconnector/
+/bi/
+/bizproc/
+/bizprocdesigner/
+/booking/
+/calendar/
+/call/
+/collaboration/
+/company/
+/conference/
+/configs/
+/crm/
+/departments/
+/desktop_app/
+/desktop_menu/
+/devops/
+/docs/
+/einvoice/
+/gotobot/
+/hr/
+/images/
+/include/
+/kb/
+/knowledge/
+/mail/
+/market/
+/marketplace/
+/marketing/
+/mobile/
+/oauth/
+/onec/
+/online/
+/page/
+/pub/
+/report/
+/rpa/
+/saleshub/
+/search/
+/services/
+/shop/
+/sign/
+/sitemap/
+/sites/
+/spaces/
+/stream/
+/tasks/
+/telephony/
+/terminal/
+/timeman/
+/upload/
+/vibe/
+/vote-result/
+/workgroups/
+
+/404.php
+/500.html
+/auth.php
+/blank.php
+/bitrix24_source.tar.gz
+/bitrixsetup.update
+/desktop.php
+/favicon.ico
+/index_old.php
+/index.php
+/license_restriction.php
+/robots.txt
+/sitemap
+/urlrewrite.php
+/ustat.php
+/.access.php
+/.bottom.menu.php
+/.department.menu_ext.php
+/.htaccess
+/.section.php
+/.top.menu.php
+/.top.menu_ext.php
+/.top_links.menu.php
