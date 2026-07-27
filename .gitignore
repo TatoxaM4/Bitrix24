@@ -122,11 +122,8 @@ install.php
 /desktop.php
 /favicon.ico
 /index_old.php
-/index.php
 /license_restriction.php
-/robots.txt
 /sitemap
-/urlrewrite.php
 /ustat.php
 /.access.php
 /.bottom.menu.php
