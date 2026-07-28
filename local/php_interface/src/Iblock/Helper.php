@@ -1,24 +1,33 @@
 <?php
+declare(strict_types=1);
+
 namespace Local\Iblock;
 
-// Подключаем правильные пространства имен Битрикса
 use Bitrix\Main\Loader;
 use Bitrix\Iblock\IblockTable;
 
 class Helper
 {
-    public static function getIdByCode($code) // добавил имя функции для примера
+    /**
+     * Получает ID инфоблока по его символьному коду.
+     *
+     * @param string $code Символьный код инфоблока
+     * @return int|null ID инфоблока или null, если не найден
+     */
+    public static function getIdByCode(string $code): ?int
     {
-        // Теперь Loader определен правильно
         if (!Loader::includeModule('iblock')) {
             return null;
         }
 
-        // Теперь IblockTable тоже определен правильно
-        return IblockTable::getList([
+        $result = IblockTable::getList([
+            'select' => ['ID'],
             'filter' => [
                 '=CODE' => $code,
             ],
-        ])->fetch()['ID'];
+        ])->fetch();
+
+        // Безопасно возвращаем ID или null, если массив пуст
+        return $result ? (int)$result['ID'] : null;
     }
 }
