@@ -4,7 +4,8 @@
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Отладка SQL запросов");
 
-$hh = 1 / 0;
+$hh = 1/0; 
+
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php");
 ?>
 // //region Отладка SQL
@@ -84,4 +85,4 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php");
 // // print_r($gbt);
 // // echo "</pre>";
 // // выводим номер строки ошибки
-// $hh = 1/0; 
+// 

@@ -13,7 +13,14 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
 
     <h4 class="mb-3">Пояснительная записка</h4>
     <div style="color: red;font-style: italic;">
-        Тут добавить описание того что и как было реализовано.
+        1. Выполняем команду создания файла лога из файла addLog.php создаеться запись в файле local/logs/exceptions.log <br>
+        2. Читаем файл exceptions.log <br>
+        3. Очищаем файл  clearlog.php <br>
+        <br>
+        p.s.<br>
+        Не совсем понял разницу зачем нужено делать log и exception<br>
+
+
     </div>
     <br>
     <br>
@@ -28,10 +35,10 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/local/logs/exceptions.log"
                    class="d-flex justify-content-between align-items-center">
                 <span>
-                    local/logs/log_custom.log
+                    /Просмотр файла
                 </span>
                     <span class="badge bg-success">
                     Файл лога из п1 ДЗ
@@ -39,10 +46,10 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/local/App/Debug/addLog.php"
                    class="d-flex justify-content-between align-items-center">
                 <span>
-                    writelog.php
+                    /Добавляем запись
                 </span>
                     <span class="badge bg-secondary">
                     Добавление в лог из п1 ДЗ
@@ -50,10 +57,10 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/homeworks/homework2/clearlog.php"
                    class="d-flex justify-content-between align-items-center">
                 <span>
-                    clearlog.php
+                    /Очищаем запись
                 </span>
                     <span class="badge bg-warning">
                     Очистить лог из п1 ДЗ
@@ -81,7 +88,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/local/logs/exceptions.log"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     local/logs/exceptions.log
@@ -92,7 +99,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/homeworks/homework2/writeexception.php"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     writeexception.php
@@ -103,7 +110,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/homeworks/homework2/clearlog.php"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     clearexception.php

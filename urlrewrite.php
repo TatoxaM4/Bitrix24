@@ -992,14 +992,6 @@ $arUrlRewrite=array (
     'PATH' => '/shop/buyer/index.php',
     'SORT' => 100,
   ),
-  93 => 
-  array (
-    'CONDITION' => '#^/bi/dataset/#',
-    'RULE' => '',
-    'ID' => 'bitrix:biconnector.apachesuperset.workspace_analytic.controller',
-    'PATH' => '/bi/dataset/index.php',
-    'SORT' => 100,
-  ),
   111 => 
   array (
     'CONDITION' => '#^/conference/#',
@@ -1022,14 +1014,6 @@ $arUrlRewrite=array (
     'RULE' => '',
     'ID' => 'bitrix:disk.common',
     'PATH' => '/docs/sale/index.php',
-    'SORT' => 100,
-  ),
-  46 => 
-  array (
-    'CONDITION' => '#^/vibe/edit/#',
-    'RULE' => '',
-    'ID' => 'bitrix:landing.start',
-    'PATH' => '/vibe/edit/index.php',
     'SORT' => 100,
   ),
   61 => 

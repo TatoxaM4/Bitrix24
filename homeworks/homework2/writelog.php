@@ -10,6 +10,7 @@ $APPLICATION->SetTitle("Добавление в лог");
     </ul>
 <?
 // ТУТ ДОБАВИТЬ СВОЮ ФУНКЦИЮ ДОБАВЛЕНИЯ В ЛОГ
+\App\Debug\Log::write("", ""); 
 
 ?>
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
